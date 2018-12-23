@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="/static/css/animate.css"/>
+    <link rel="stylesheet" href="/static/css/dancing.css"/>
+
+    <style>
+        body {
+            background-image:url("/static/images/background.jpg");
+            -webkit-background-size: 100%;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size:cover;
+            background-position: center center;
+            background-attachment: fixed;
+            background-repeat:no-repeat;
+        }
+    </style>
+
+    <title>{%block title%}{%endblock%}</title>
+</head>
+<body>
+    {%include "./__nav.html"%}
+
+    {%block main_content%}{%endblock%}
+
+    <script src="/static/js/jquery.js"></script>
+    <!--script src="/static/js/popper.min.js"></script-->
+    <script src="/static/js/bootstrap.min.js"></script>
+</body>
+</html>
