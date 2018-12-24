@@ -18,7 +18,7 @@ from django.conf.urls import handler404, handler500
 
 urlpatterns = [
     path('', include('index.urls')),
-    path('accounts/', include('django.contrib.auth.urls')),,
+    path('accounts/', include('django.contrib.auth.urls')),
     path("admin/", admin.site.urls),
 ]
 
