@@ -1,0 +1,72 @@
+{%extends "../base/base.html"%}
+
+{%block title%}Login{%endblock%}
+
+{%block main_content%}
+    <div class="container">
+        <div class="login-form">
+            <div class="main-div animated fadeInDownBig">
+                <form id="Login" method="post">
+                    {% csrf_token %}
+                    <div class="form-group">
+                        {{ form.username }}
+                    </div>
+                    <div class="form-group">
+                        {{ form.password }}
+                    </div>
+                    <button type="submit" class="btn btn-primary">Login</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("id_username").setAttribute("placeholder", "Username");
+        document.getElementById("id_password").setAttribute("placeholder", "Password");
+    </script>
+
+    <style>
+        .login-form{
+            text-align:center;
+        }
+        .main-div {
+            background: #ffffff none repeat scroll 0 0;
+            border-radius: 10px;
+            margin: 50px auto;
+            width: 400px;
+            padding: 30px 70px 30px 70px;
+        }
+        .login-form .form-group {
+            margin-bottom:10px;
+        }
+        #id_username{
+            background: #f7f7f7 none repeat scroll 0 0;
+            border: 1px solid #d4d4d4;
+            border-radius: 10px;
+            font-size: 14px;
+            width: 100%;
+            height: 30px;
+            line-height: 50px;
+            padding: 10px;
+        }
+        #id_password{
+            background: #f7f7f7 none repeat scroll 0 0;
+            border: 1px solid #d4d4d4;
+            border-radius: 10px;
+            font-size: 14px;
+            width: 100%;
+            height: 30px;
+            line-height: 50px;
+            padding: 10px;
+        }
+        .login-form  .btn.btn-primary {
+            color: #ffffff;
+            font-size: 14px;
+            width: 50%;
+            height: 30px;
+            line-height: 30px;
+            padding: 0;
+            margin-top:20px;
+        }
+    </style>
+{%endblock%}
