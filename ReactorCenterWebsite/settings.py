@@ -26,7 +26,7 @@ SECRET_KEY = '(y#0v09ap##8#8*@1oee4qt+wl5@54#ilto&h6(*wat_na_9qh'
 DEBUG = False
 TEMPLATE_DEBUG = DEBUG
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['*', 'reactorcenter.dnri.vn:80']
 
 
 # Application definition
